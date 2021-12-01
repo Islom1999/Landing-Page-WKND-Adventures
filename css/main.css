@@ -1,0 +1,644 @@
+/* header start */
+
+.header-top {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: wheat;
+}
+
+.account-lang {
+    line-height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.account-lang li {
+    margin-right: 30px;
+}
+
+.nav-menyu {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+.menyu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menyu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.input-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.input-search input {
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+
+/* header-section start */
+
+
+.header-section {
+    width: 100%;
+    font-size: 20px;
+}
+
+.header-section-pos {
+    width: 100%;
+    position: relative;
+}
+
+.header-section-pos .bg {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.header-section-bottom {
+    border-bottom: 1px solid rgba(124, 119, 119, 0.3);
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    padding: 30px;
+    background-color: white;
+}
+
+/*carousel start*/
+
+.carousel{
+    position: relative;
+    height: 550px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-track-container{
+    background-color:aquamarine;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    transition: transform 300ms ease-in;
+}
+
+.carousel-slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-button{
+    position: absolute;
+    bottom: -60px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button img{
+    width: 25px;
+}
+
+.carousel-btn-left{
+    right: 140px;
+}
+
+.carousel-btn-right{
+    right: 90px;
+}
+
+.carousel-nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom:-50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+.carousel-indicator{
+    border:0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color:rgb(0, 0, 0, .3);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.current-slide{
+    background-color:rgb(0, 0, 0, .85);
+}
+
+.is-hidden{
+    display: none;
+}
+
+/*carousel end*/
+
+
+/**/
+
+.header-section-bottom p,
+aside .header-section-bottom p {
+    margin: 10px 0;
+    line-height: 35px;
+}
+
+.header-section-bb {
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-section-bb .cirles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-section-bb .img-bottom-circle,
+.img-bottom-circle-active {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 7px;
+    margin: 10px;
+}
+
+.img-bottom-circle-active {
+    background-color: black;
+}
+
+.header-section-bb img {
+    width: 25px;
+    margin-left: 30px;
+}
+
+.carusel-elem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+
+/* header end */
+
+
+/* section start */
+
+section {
+    margin-top: 70px;
+}
+
+section .container {
+    padding: 40px 0;
+}
+
+section .parent img,
+aside .parent img {
+    width: 100%;
+}
+
+section .parent h1,
+aside .parent h1 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+section .parent h2 {
+    font-size: 25px;
+    line-height: 40px;
+    margin: 15px 0;
+}
+
+section .parent p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+section .container h1,
+aside .container>.h1 {
+    padding: 30px 0;
+    font-size: 35px;
+    position: relative;
+}
+
+section .container .col-4>h1::after,
+section .container>h1::after,
+aside .container>.h1::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: yellow;
+}
+
+section .container .h1 {
+    padding: 30px 20px;
+    font-size: 35px;
+    position: relative;
+}
+
+section .container .h1::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 17px;
+    left: 20px;
+    background-color: yellow;
+}
+
+section .container .parent h3,
+aside .container .parent h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+section .container .parent h5,
+aside .container .parent h5 {
+    color: #909090;
+}
+
+hr {
+    height: 5px;
+    margin: 50px 0;
+    border: none;
+    background-color: #EBEBEB;
+}
+
+/* slider */
+.slider-animation{
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+
+.slider-animation figure{
+    position: relative;
+    width: 300%;
+    height: 600px;
+    left: 0;
+    animation: 12s slider infinite;
+}
+
+.slider-animation figure img{
+    width: 33.33%;
+    height: 600px;
+    object-fit: cover;
+    float: left;
+}
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    15%{
+        left: 0;
+    }
+    40%{
+        left: -100%;
+    }
+    55%{
+        left: -100%;
+    }
+    80%{
+        left: -200%;
+    }
+    95%{
+        left: -200%;
+    }
+}
+
+/* section end */
+
+
+/* aside start */
+
+.hh1 {
+    font-size: 35px;
+}
+
+.h2 {
+    font-size: 30px;
+    padding-left: 1rem;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.btn-black {
+    background-color: #202020;
+    color: white;
+    margin-left: 1rem;
+    margin-top: 50px;
+}
+
+.aside-pos {
+    background-color: #F7F7F7;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+aside img {
+    width: 100%;
+}
+
+.aside-pos .parent [class*="col-"] {
+    padding: 1.5rem;
+}
+
+.aside-pos p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.btn-30 {
+    margin-top: 30px;
+}
+
+.aside-pos input {
+    height: 40px;
+    width: 280px;
+    padding-left: 10px;
+}
+
+.aside-pos input::placeholder {
+    font-size: 18px
+}
+
+
+/* aside end */
+
+
+/* footer start */
+
+footer {
+    background-color: #202020;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+
+footer .menyu li {
+    margin: 0 10px;
+}
+
+.footer-menyu li a {
+    color: #909090;
+}
+
+.footer-menyu li .footer-menyu-active {
+    color: white;
+}
+
+.footer-menyu-2 {
+    margin-left: 70px;
+}
+
+.footer-menyu-2 li {
+    background-color: white;
+    margin: 0;
+    border: 1px solid rgb(77, 73, 73);
+    padding: 10px 15px;
+}
+
+.footer-menyu-2 li i {
+    font-size: 25px;
+}
+
+.footer-bottom {
+    color: #909090;
+    margin: 40px 0;
+}
+
+
+/* footer end */
+
+
+/* edventres page start */
+
+.parent-bg {
+    background-color: #F7F7F7;
+}
+
+.e-s-p {
+    margin-left: 1rem;
+    padding: 30px 0;
+    font-size: 18px;
+}
+
+.e-s-i img {
+    width: 100%;
+    height: 100%;
+}
+
+.e-s-i {
+    position: relative;
+}
+
+.e-s-i::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background-color: rgb(238, 228, 228);
+}
+
+.e-a-p {
+    margin-bottom: 100px;
+}
+
+.menyu-active {
+    background-color: yellow;
+}
+
+.btn-white {
+    border: none;
+    outline: none;
+    margin: 0 8px;
+    padding: 10px 12px;
+    letter-spacing: 1px;
+    color: rgb(19, 19, 18);
+    transition: all 1s linear;
+}
+
+.btn-white:hover {
+    background-color: yellow;
+}
+
+
+/* edventres page end */
+
+
+/* faq page start */
+
+.f-s-h1::after {
+    content: "";
+}
+
+.accordion-item h3 img {
+    width: 20px;
+    float: right;
+    margin-right: 30px;
+}
+
+.accordion-item h3 {
+    width: 100%;
+}
+
+
+.accordion-item hr {
+    height: 4px;
+    border: none;
+    margin: 7px 0;
+    background-color: #EBEBEB;
+}
+
+.f-mt {
+    margin-top: 3rem;
+    padding-left: 2.5rem !important;
+}
+
+.f-s .container {
+    padding: 0;
+}
+
+/* accordion */
+
+.accordion .accordion-item p{
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-right: 15px;
+    margin: 0;
+    transition: 1s linear;
+    border-bottom: 2px solid rgb(0, 0, 0, .2);
+}
+
+.accordion .accordion-item.accordion-item-active p{
+    display: block;
+    height: auto;
+    overflow: hidden;
+    margin: 10px 0;
+    padding-bottom: 15px;
+}
+
+/* faq page end */
+
+
+/* about page start */
+
+.about-s-p {
+    margin: 20px 0;
+}
+
+.about-card {
+    margin-bottom: 50px;
+}
+
+.about-card img {
+    width: 100%;
+}
+
+.about-card h3 {
+    text-align: center;
+    font-size: 30px !important;
+}
+
+.about-card p {
+    color: #909090;
+    font-size: 14px !important;
+    text-align: center;
+    margin-bottom: 25px !important;
+    margin-top: 25px !important;
+}
+
+.about-card-link {
+    justify-content: center;
+    margin: 0;
+}
+
+.about-card-link li {
+    background-color: #202020;
+    margin: 0;
+    border: 1px solid white;
+    padding: 7px 12px;
+}
+
+.about-card-link li i {
+    font-size: 20px;
+    color: white;
+}
+
+.about-card .col-3 {
+    padding: 1.3rem;
+}
+
+.about-s-p {
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+
+/* about page end */
